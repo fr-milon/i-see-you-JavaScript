@@ -1,0 +1,48 @@
+<!-- Design by FR-Milon  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>I see you | JavaScript</title>
+  </head>
+  <body>
+
+    <!-- EYES  -->
+  <div class="eyes">
+    <div class="eye">
+      <div class="ball">
+        <div class="lanse"></div>
+      </div>
+    </div>
+    <div class="eye">
+      <div class="ball">
+        <div class="lanse"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desing cradit  -->
+  <div class="design">
+    <h1>Design by... <a href="https://facebook.com/rjapppon">FR-Milon</a> </h1>
+  </div>
+<script>
+  var balls = document.getElementsByClassName("ball");
+  document.onmousemove = function(){
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+    //event.clientX => get the horizontal coordinate of the mouse
+    //event.clientY => get the Vertical coordinate of the mouse
+    //window.innerWidth => get the browser width
+    //window.innerHeight => get the browser height
+
+    for(var i=0;i<2;i++){
+      balls[i].style.left = x;
+      balls[i].style.top = y;
+      balls[i].style.transform = "translate(-"+x+",-"+y+")";
+    }
+  }
+</script>
+
+  </body>
+</html>

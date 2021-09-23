@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #34495e;
+}
+.eyes{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: inline-flex;
+  margin-left: 25%;
+}
+.eye{
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball{
+  width: 40px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 15px solid #333;
+}
+
+.lanse {
+  width: 15px;
+  height: 15px;
+  background: rgba(253, 252, 252, 0.568);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.design {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.design h1 {
+  color: white;
+  font-family: impact;
+  letter-spacing: 1px;
+}
+
+.design a {
+  color: crimson;
+  text-shadow: white 2px 2px 2px;
+}
+
+.design a:hover {
+  color: red;
+}
+
+@media screen and (min-width:350px) and (max-width:800px) {
+  .eyes{
+    margin-left: 0px;
+  }
+}
